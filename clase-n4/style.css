@@ -1,0 +1,50 @@
+/* Comentarios     ------      */
+
+
+*{
+    background-color: darkorchid;
+   
+
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Llamar a una clase . punto y el nombre de class*/
+
+.estilos{
+    color:aquamarine;
+    font-size: 30px;
+}
+
+#unico{
+    color:gold;
+    font-size: 35px;
+}
+ /*  Precedencias...   */
+#cambio .nuevo{
+    font-size: 35px;
+    color:azure;
+}
+
+.menu>li{
+    color:brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}
+/*
+h2+p{
+    color: beige;
+    font-size: 50px;
+}
+*/
+h2~p {
+    color:rgb(18, 18, 39);
+    font-size: 40px;
+}
+
+span~li{
+    color:rgb(255, 152, 200);
+    font-size: 42px;
+}

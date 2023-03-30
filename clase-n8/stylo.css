@@ -1,0 +1,100 @@
+/* vamos a trabajar con flex, ya que sera flexible en todo nuestro sitio */
+.contenedor-padre {
+    display: flex;  
+    height: 100px;
+    border: 2px solid black;
+  
+  }
+  
+  .elemento-hijo {
+    background-color: #9c88ff;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    padding: 24px;
+    margin: 12px;
+    flex: 1;
+  }
+  .flex-direction-col {
+    flex-direction: column;
+    border: 1px solid blue;
+    gap:0.5rem;
+    height:250px;
+  }
+  .elemento {
+    color:white;
+    text-align:center;
+    background-color: #82606e;
+    height:20px;
+    width:50px;
+    padding:25px;
+  }
+  
+  .flex-wrap{
+    width:400px;
+    border:2px solid blue;
+    flex-wrap: wrap;
+    height:200px;
+    &-no{
+      flex-wrap: nowrap;
+      border:2px solid blue;
+      width:300px;
+      .elemento-hijo{
+        background-color: #08403F;
+      }
+    }
+    .elemento-hijo{
+       font-size:20px;
+       background-color: #08403F;
+       height:30px;
+       width:200px;
+    }
+  }
+  .flex-jc{
+    justify-content:center;
+    gap: 1rem;
+    border: 2px solid blue;
+    &-end{
+      justify-content:flex-end;
+      border: 2px solid blue;
+      gap: 1rem;
+    }
+    &-start{
+      justify-content:flex-start;
+      border: 2px solid blue;
+      gap: 1rem;
+    }
+    &-around{
+      justify-content: space-around;
+      border: 2px solid blue;
+      gap: 1rem;
+    }
+    .elemento{
+      background-color:#1f694e;
+    }
+  }
+  
+  .flex-ac{
+    .elemento{
+      background-color:#ff6666;
+    }
+    &-end{
+      border: 2px solid blue;
+      gap: 1rem;
+      align-items:end;
+      .elemento{
+      background-color:#ff6666;
+      }
+    }
+    &-start{
+      align-items:start;
+      border: 2px solid blue;
+      gap: 1rem;
+      .elemento{
+      background-color:#ff6666;
+     }
+    }
+    border: 2px solid blue;
+    gap: 1rem;
+    align-items:center
+  }

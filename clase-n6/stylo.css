@@ -1,0 +1,35 @@
+/* Paleta de colores */
+
+body{
+    background-color: lightseagreen;
+    padding: 0;
+    margin: 0;
+
+}
+
+header{
+    border: 1px solid rgb(194, 17, 17);
+
+}
+
+.seccion{
+    border: 1px solid #ffff;
+    /*display: inline-block;*/
+    display: flex;
+    width: auto;
+    flex-direction:row
+;    justify-content: end;
+    }
+
+    .box{
+        display: inline-block;
+        flex-direction: column-reverse;
+        margin: 5px; /*1.25rem*/
+        padding: 20px; /*1.25rem*/
+        border:2px solid black; /*0.125*/
+        width: 90px;
+        color: #fff;
+        overflow: :scroll;
+
+
+    }

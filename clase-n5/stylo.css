@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@700&display=swap');
+/* font-family: 'Mukta', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/*   ctrl k c  -  ctrl k u
+
+
+body{
+    font-family: 'Mukta', sans-serif;
+   
+}
+
+.fuente{
+    font-family: 'Merriweather', serif;
+   
+}  */
+
+
+  /* @font-face */
+    @font-face {
+      font-family: "LightItalic";
+      src: ("../Lato/Lato-LightItalic.ttf");
+    }
+    
+    body {
+      font-family: "LightItalic", sans-serif;
+    }
+ul>li{
+   list-style: none; /*  punto de items */
+    font-size: 30px;
+}
+
+li {
+    
+}
