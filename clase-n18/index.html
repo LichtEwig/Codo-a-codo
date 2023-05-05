@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Eventos </title>
+        <meta name="description" content="ya vimos el DOM , Eventos">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+       <h1> Manipulacion del Dom Eventos </h1>
+
+       <input type="number" id="calculo1" placeholder="Escribe algo aqui" />
+       <!--    uno de los eventos onchange escuchar lo que los usuarios terminaron de escribir -->
+       <input type="number" onchange="console.log('Cambio el input')" id="calculo2" placeholder="Escribe algo aqui" />
+
+       <button id="btnCalcular"   onclick="btnFuncion()">Calcular</button>
+       <!-- Podemos mejorar nuestro codigo y pasar los eventos a JS-->
+       
+       <p id="resultado">   </p>
+
+
+
+
+       <form >
+        <input id="calculo3" placeholder="Escribe algo aqui" />
+
+        <input id="calculo4" placeholder="Escribe algo aqui" />
+ 
+        <button id="btnCalcular3" >Calcular</button>
+       
+        
+        <p id="resultado3">   </p>
+
+
+       </form>
+
+
+
+        <h2>   Calculadora con DOM Basico</h2>
+        <input type="number" id="valor1" placeholder="Ingrese el primer valor "> <!-- input for the first value -->
+        <input type="number" id="valor2" placeholder="Ingrese el segundo valor " ><!-- input for the second value -->
+        <div id="calculador">
+            <input type="radio" name="operacion" id="sum" value="sum">Sumar</input>
+            <input type="radio" name="operacion" id="rest" value="rest">Restar</input>
+            <input type="radio" name="operacion" id="mul" value="mul">Multiplicar</input>
+            <input type="radio" name="operacion" id="divi" value="divi">Dividir</input>
+            <!-- radio buttons for selecting the operation -->
+        </div>
+        <button onclick="calculador()">Dar resultado</button>
+        <!-- button to trigger the calculation -->
+
+        <div id="respuesta"></div>
+
+
+
+       <script src="./app.js"></script>
+    </body>
+</html>
